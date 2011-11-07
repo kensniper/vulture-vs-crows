@@ -1,0 +1,10 @@
+images={
+	font="resources/graphics/Font.psd",
+	button="resources/graphics/Button.psd",
+	label="resources/graphics/Label.psd",
+	boid="resources/graphics/Boid.psd",
+	line="resources/graphics/Line.psd",
+	slider="resources/graphics/Slider.psd",
+	mouse="resources/graphics/Mouse.psd",
+    checkbox="resources/graphics/CheckBox.psd"
+}

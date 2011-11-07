@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="resources\shaders\shader.frag" open="0" top="0" tabpos="3">
+		<Cursor position="628" topLine="0" />
+	</File>
+	<File name="resources\shaders\shader.vert" open="0" top="0" tabpos="4">
+		<Cursor position="158" topLine="0" />
+	</File>
+	<File name="src\Boids.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="8569" topLine="303" />
+	</File>
+	<File name="src\Boids.h" open="0" top="0" tabpos="7">
+		<Cursor position="2550" topLine="65" />
+	</File>
+	<File name="src\Button.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="3239" topLine="80" />
+	</File>
+	<File name="src\Button.h" open="0" top="0" tabpos="3">
+		<Cursor position="532" topLine="0" />
+	</File>
+	<File name="src\Font.cpp" open="0" top="0" tabpos="12">
+		<Cursor position="619" topLine="0" />
+	</File>
+	<File name="src\Font.h" open="0" top="0" tabpos="11">
+		<Cursor position="98" topLine="0" />
+	</File>
+	<File name="src\GUI.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="164" topLine="0" />
+	</File>
+	<File name="src\GUI.h" open="1" top="1" tabpos="4">
+		<Cursor position="355" topLine="0" />
+	</File>
+	<File name="src\Startup.h" open="0" top="0" tabpos="2">
+		<Cursor position="928" topLine="25" />
+	</File>
+	<File name="src\Vector2d.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="1734" topLine="0" />
+	</File>
+	<File name="src\Vector2d.h" open="0" top="0" tabpos="6">
+		<Cursor position="619" topLine="8" />
+	</File>
+	<File name="src\gamestates.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="116" topLine="9" />
+	</File>
+	<File name="src\gamestates.h" open="1" top="0" tabpos="2">
+		<Cursor position="603" topLine="6" />
+	</File>
+	<File name="src\label.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="1314" topLine="26" />
+	</File>
+	<File name="src\label.h" open="0" top="0" tabpos="6">
+		<Cursor position="450" topLine="0" />
+	</File>
+	<File name="src\lua_util.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="587" topLine="0" />
+	</File>
+	<File name="src\lua_util.h" open="0" top="0" tabpos="0">
+		<Cursor position="539" topLine="0" />
+	</File>
+	<File name="src\main.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="768" topLine="13" />
+	</File>
+	<File name="src\random.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="18" topLine="0" />
+	</File>
+	<File name="src\random.h" open="0" top="0" tabpos="9">
+		<Cursor position="1145" topLine="66" />
+	</File>
+	<File name="src\slider.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="2676" topLine="44" />
+	</File>
+	<File name="src\slider.h" open="0" top="0" tabpos="9">
+		<Cursor position="549" topLine="0" />
+	</File>
+	<File name="src\startup.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="1872" topLine="64" />
+	</File>
+</CodeBlocks_layout_file>
