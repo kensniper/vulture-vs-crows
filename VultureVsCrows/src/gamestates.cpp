@@ -62,8 +62,7 @@ gmst_mainmenu::gmst_mainmenu(Font* f,Window &app):gamestate(f)
     double byM=0.5;
     double bheigth=0.1;
     double bspacing=0.02;
-    b1.Set(bxM,bxm,byM,byM-bheigth,app.GetTex("button"),font,"Auto code new game!");byM-=bheigth+bspacing;
-    b1.SetEnabled(false);
+    b1.Set(bxM,bxm,byM,byM-bheigth,app.GetTex("button"),font,"Play game!");byM-=bheigth+bspacing;
     b_background.Set(bxM,bxm,byM,byM-bheigth,app.GetTex("button"),font,"Fiddle with the background");byM-=bheigth+bspacing;
     b_menu.Set(bxM,bxm,byM,byM-bheigth,app.GetTex("button"),font,"Configure some stuff");byM-=bheigth+bspacing;
     b_exit.Set(bxM,bxm,byM,byM-bheigth,app.GetTex("button"),font,"Kill this thing");byM-=bheigth+bspacing;
@@ -519,6 +518,21 @@ unsigned long gmst_backmenu::Update(Window &app)
     }
 
     return state;
+}
+
+
+gmst_game::gmst_game(Font* f,Window &app,Boids *b):gamestate(f)
+{
+
+}
+
+gmst_game::~gmst_game()
+{
+
+}
+unsigned long gmst_game::Update(Window &app)
+{
+
 }
 
 

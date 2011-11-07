@@ -31,7 +31,8 @@ namespace GMST
         exitGame=1,
         toMainMenu=2,
         toSettingsMenu=4,
-        toBackgroundMenu=8
+        toBackgroundMenu=8,
+        toGame=0x10
     };
 };
 
@@ -137,6 +138,14 @@ private:
     Slider sfr;
 
 
+};
+
+class gmst_game:public gamestate
+{
+public:
+    gmst_game(Font* f,Window &app,Boids *b);
+    virtual ~gmst_game();
+    virtual unsigned long Update(Window &app);
 };
 
 #endif
