@@ -8,7 +8,7 @@
 		<Cursor position="158" topLine="0" />
 	</File>
 	<File name="src\Boids.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="0" topLine="0" />
+		<Cursor position="5734" topLine="198" />
 	</File>
 	<File name="src\Boids.h" open="0" top="0" tabpos="7">
 		<Cursor position="47" topLine="0" />
@@ -28,11 +28,11 @@
 	<File name="src\GUI.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="src\GUI.h" open="1" top="0" tabpos="2">
+	<File name="src\GUI.h" open="0" top="0" tabpos="2">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="src\Startup.h" open="1" top="1" tabpos="3">
-		<Cursor position="49" topLine="0" />
+	<File name="src\Startup.h" open="0" top="0" tabpos="3">
+		<Cursor position="49" topLine="6" />
 	</File>
 	<File name="src\Vector2d.cpp" open="0" top="0" tabpos="7">
 		<Cursor position="0" topLine="0" />
@@ -40,11 +40,11 @@
 	<File name="src\Vector2d.h" open="0" top="0" tabpos="6">
 		<Cursor position="50" topLine="0" />
 	</File>
-	<File name="src\gamestates.cpp" open="0" top="0" tabpos="1">
-		<Cursor position="723" topLine="0" />
+	<File name="src\gamestates.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="16478" topLine="496" />
 	</File>
-	<File name="src\gamestates.h" open="0" top="0" tabpos="2">
-		<Cursor position="52" topLine="0" />
+	<File name="src\gamestates.h" open="1" top="0" tabpos="2">
+		<Cursor position="2884" topLine="109" />
 	</File>
 	<File name="src\label.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="0" topLine="0" />
@@ -71,12 +71,12 @@
 		<Cursor position="48" topLine="0" />
 	</File>
 	<File name="src\startup.cpp" open="0" top="0" tabpos="5">
-		<Cursor position="0" topLine="0" />
+		<Cursor position="2900" topLine="68" />
 	</File>
-	<File name="src\textfile.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="0" topLine="0" />
+	<File name="src\textfile.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="418" topLine="15" />
 	</File>
-	<File name="src\textfile.h" open="1" top="0" tabpos="4">
-		<Cursor position="0" topLine="0" />
+	<File name="src\textfile.h" open="0" top="0" tabpos="4">
+		<Cursor position="302" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

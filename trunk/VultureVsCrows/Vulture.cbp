@@ -33,6 +33,7 @@
 					<Add option="-lsfml-graphics-s" />
 					<Add option="-lsfml-window-s" />
 					<Add option="-lsfml-system-s" />
+					<Add option="-Wno-write-strings" />
 				</Linker>
 			</Target>
 		</Build>
