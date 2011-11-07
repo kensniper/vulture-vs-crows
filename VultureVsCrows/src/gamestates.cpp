@@ -496,6 +496,26 @@ unsigned long gmst_backmenu::Update(Window &app)
         plabel.SetVisible(visible);
         aslider.SetVisible(visible);
         alabel.SetVisible(visible);
+        lslimit.SetVisible(visible);
+        sslimit.SetVisible(visible);
+        lmslimit.SetVisible(visible);
+        smslimit.SetVisible(visible);
+        lmblur.SetVisible(visible);
+        smblur.SetVisible(visible);
+        lma.SetVisible(visible);
+        sma.SetVisible(visible);
+        laf.SetVisible(visible);
+        saf.SetVisible(visible);
+        lef.SetVisible(visible);
+        sef.SetVisible(visible);
+        lavf.SetVisible(visible);
+        savf.SetVisible(visible);
+        lvmf.SetVisible(visible);
+        svmf.SetVisible(visible);
+        lmaf.SetVisible(visible);
+        smaf.SetVisible(visible);
+        lfr.SetVisible(visible);
+        sfr.SetVisible(visible);
     }
 
     return state;

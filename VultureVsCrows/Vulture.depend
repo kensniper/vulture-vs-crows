@@ -253,3 +253,10 @@
 1320697692 source:e:\programming\vulture-vs-crows\vulturevscrows\src\slider.cpp
 	"slider.h"
 
+1320698401 source:e:\programming\vulture-vs-crows\vulturevscrows\src\boids.cpp
+	"Boids.h"
+
+1320698402 source:e:\programming\vulture-vs-crows\vulturevscrows\src\startup.cpp
+	"startup.h"
+	<sstream>
+
