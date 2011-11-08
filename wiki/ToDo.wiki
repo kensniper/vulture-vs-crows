@@ -5,6 +5,7 @@
 == Curent ==
 
 === Code ===
+
   * Add Screenshot capability.
   * Make a limited square space with paralax background.
   * Put a ship in space with the ability to drive it.
@@ -12,10 +13,11 @@
   * The camera must never leave the space.
 
 === Graphics ===
-  * Draw a simple loking ship that looks futuristic and somehat like a crow.
+  * Draw a simple loking ship that looks futuristic and somewhat like a crow.
   * Draw some tileable stars
 
 === Other ===
+  * [ShipModules ship modules]
   * Add comments to everything
   * Add cool screenshots to project page
 
