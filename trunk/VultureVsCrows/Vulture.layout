@@ -7,11 +7,11 @@
 	<File name="resources\shaders\shader.vert" open="0" top="0" tabpos="4">
 		<Cursor position="158" topLine="0" />
 	</File>
-	<File name="src\Boids.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="5734" topLine="198" />
+	<File name="src\Boids.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="5727" topLine="205" />
 	</File>
-	<File name="src\Boids.h" open="0" top="0" tabpos="7">
-		<Cursor position="47" topLine="0" />
+	<File name="src\Boids.h" open="1" top="0" tabpos="6">
+		<Cursor position="2511" topLine="56" />
 	</File>
 	<File name="src\Button.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="0" topLine="0" />
@@ -31,8 +31,8 @@
 	<File name="src\GUI.h" open="0" top="0" tabpos="2">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="src\Startup.h" open="0" top="0" tabpos="3">
-		<Cursor position="49" topLine="6" />
+	<File name="src\Startup.h" open="1" top="0" tabpos="5">
+		<Cursor position="2053" topLine="21" />
 	</File>
 	<File name="src\Vector2d.cpp" open="0" top="0" tabpos="7">
 		<Cursor position="0" topLine="0" />
@@ -40,11 +40,14 @@
 	<File name="src\Vector2d.h" open="0" top="0" tabpos="6">
 		<Cursor position="50" topLine="0" />
 	</File>
+	<File name="src\backmenu.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="12202" topLine="331" />
+	</File>
 	<File name="src\gamestates.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="16478" topLine="496" />
+		<Cursor position="4590" topLine="153" />
 	</File>
 	<File name="src\gamestates.h" open="1" top="0" tabpos="2">
-		<Cursor position="2884" topLine="109" />
+		<Cursor position="2956" topLine="121" />
 	</File>
 	<File name="src\label.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="0" topLine="0" />
@@ -55,8 +58,8 @@
 	<File name="src\lua_util.h" open="0" top="0" tabpos="0">
 		<Cursor position="50" topLine="0" />
 	</File>
-	<File name="src\main.cpp" open="0" top="0" tabpos="3">
-		<Cursor position="44" topLine="0" />
+	<File name="src\main.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="1175" topLine="38" />
 	</File>
 	<File name="src\random.cpp" open="0" top="0" tabpos="10">
 		<Cursor position="18" topLine="0" />
@@ -70,8 +73,8 @@
 	<File name="src\slider.h" open="0" top="0" tabpos="9">
 		<Cursor position="48" topLine="0" />
 	</File>
-	<File name="src\startup.cpp" open="0" top="0" tabpos="5">
-		<Cursor position="2900" topLine="68" />
+	<File name="src\startup.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="6592" topLine="242" />
 	</File>
 	<File name="src\textfile.cpp" open="0" top="0" tabpos="1">
 		<Cursor position="418" topLine="15" />
