@@ -89,6 +89,7 @@ class Boids
         bool draw_tree;
         bool brute_force;
         bool pause;
+        bool use_shaders;
 
 
     protected:

@@ -18,8 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 #include "gamestates.h"
 
 
-
-
 int main()
 {
     Window App;
@@ -28,6 +26,7 @@ int main()
 
 
     Label FPS_label(App.ratio-0.01,App.ratio-0.27,0.99,0.94,App.GetTex("label"),&f,"BLA");
+    FPS_label.SetVisible(false);
     Boids boids(App,App.ratio,App.L);
 
     int state=0;
@@ -46,6 +45,15 @@ int main()
         {
             if (Event.Type == sf::Event::Closed)
                 Running = false;
+            if ((Event.Type == sf::Event::KeyPressed)&&(Event.Key.Code == sf::Key::F12))
+                Running = false;
+            if ((Event.Type == sf::Event::KeyPressed)&&(Event.Key.Code == sf::Key::F1))
+                App.TakeScreenshot();
+            if ((Event.Type == sf::Event::KeyPressed)&&(Event.Key.Code == sf::Key::F2))
+            {
+                FPS_label.SetVisible(!FPS_label.IsVisible());
+            }
+
         }
 
         boids.Update(App);

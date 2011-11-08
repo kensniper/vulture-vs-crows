@@ -212,6 +212,7 @@ gmst_backmenu::gmst_backmenu(Font* f,Window &app,Boids *b):gamestate(f)
 
     con.Set(bxM,bxm,byM,byM-bheigth,app.GetTex("button"),f,"Show connections");byM-=bheigth+bspacing;
     dtree.Set(bxM,bxm,byM,byM-bheigth,app.GetTex("button"),f,"Show tree");byM-=bheigth+bspacing;
+    ushade.Set(bxM,bxm,byM,byM-bheigth,app.GetTex("button"),f,"Shaders: True");byM-=bheigth+bspacing;
     bforce.Set(bxM,bxm,byM,byM-bheigth,app.GetTex("button"),f,"Calc with KD tree");byM-=bheigth+bspacing;
     reset.Set(bxM,bxm,byM,byM-bheigth,app.GetTex("button"),f,"Restart");byM-=bheigth+bspacing;
     pauseb.Set(bxM,bxm,byM,byM-bheigth,app.GetTex("button"),f,"Pause");byM-=bheigth+bspacing;
@@ -239,9 +240,15 @@ gmst_backmenu::gmst_backmenu(Font* f,Window &app,Boids *b):gamestate(f)
     else
         pauseb.SetText("Unpause");
 
+    if(boids->use_shaders)
+        ushade.SetText("Shaders: True");
+    else
+        ushade.SetText("Shaders: False");
+
     AddToList(&con);
     AddToList(&dtree);
     AddToList(&bforce);
+    AddToList(&ushade);
     AddToList(&reset);
     AddToList(&pauseb);
     AddToList(&back);
@@ -469,6 +476,16 @@ unsigned long gmst_backmenu::Update(Window &app)
             pauseb.SetText("Unpause");
     }
 
+    if(ushade.pressed)
+    {
+        boids->use_shaders=!boids->use_shaders;
+        if(boids->use_shaders)
+            ushade.SetText("Shaders: True");
+        else
+            ushade.SetText("Shaders: False");
+    }
+
+
     if(reset.pressed)
         boids->Reset();
 
@@ -532,7 +549,7 @@ gmst_game::~gmst_game()
 }
 unsigned long gmst_game::Update(Window &app)
 {
-
+    return 0;
 }
 
 
