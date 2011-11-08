@@ -32,7 +32,8 @@ namespace GMST
         toMainMenu=2,
         toSettingsMenu=4,
         toBackgroundMenu=8,
-        toGame=0x10
+        toGame=0x10,
+        toModuleEditor=0x20
     };
 };
 
@@ -65,6 +66,7 @@ public:
 
 private:
     Button b1;
+    Button bmeditor;
     Button b_menu;
     Button b_exit;
     Button b_background;
@@ -140,6 +142,15 @@ private:
 
 
 };
+
+class gmst_meditor:public gamestate
+{
+public:
+    gmst_meditor(Font* f,Window &app,Boids *b);
+    virtual ~gmst_meditor();
+    virtual unsigned long Update(Window &app);
+};
+
 
 class gmst_game:public gamestate
 {
