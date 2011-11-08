@@ -44,7 +44,7 @@ public:
     GLuint texture;
 };
 
-class Window:public sf::Window
+class Window:public sf::RenderWindow
 {
 public:
     Window();
@@ -56,6 +56,8 @@ public:
     Image GetTex(string s);
     unsigned int GetVideoModeNum();
     const sf::Input& GetInput() const;
+
+    void TakeScreenshot();
 
     lua_State *L;
     double ratio;
@@ -70,6 +72,7 @@ private:
     void load_video_settings(sf::VideoMode &VM,sf::WindowSettings &WSettings);
     void save_video_settings();
     void Load_Images();
+    bool take_screenshot;
 
     map<string,Image> imagelist;
     string title;

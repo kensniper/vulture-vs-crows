@@ -204,21 +204,29 @@ void Boids::search_tree(vector<Boid>::iterator node,vector<Boid>::iterator boid,
 
 void Boids::Update(Window &App)
 {
-    glUseProgramObjectARB(backs_prog);
-    float mousecoords[2]={(App.GetInput().GetMouseX()*1.0/App.GetHeight()*2.-App.ratio)/2,-(App.GetInput().GetMouseY()*1.0/App.GetHeight()*2.-1.)};
-    glUniform2fv(glGetUniformLocation(backs_prog,  "mousepos"), 1, mousecoords);
-    glUseProgramObjectARB(0);
+    ///======= get mousepos to shader ==========
+    if(use_shaders)
+    {
+        glUseProgramObjectARB(backs_prog);
+        float mousecoords[2]={(App.GetInput().GetMouseX()*1.0/App.GetHeight()*2.-App.ratio)/2,-(App.GetInput().GetMouseY()*1.0/App.GetHeight()*2.-1.)};
+        glUniform2fv(glGetUniformLocation(backs_prog,  "mousepos"), 1, mousecoords);
+        glUseProgramObjectARB(0);
+    }
+
+    ///=========================================
 
     if(pause)
         return;
 
-    double dt=std::min(App.GetFrameTime(),0.1f);
 
-    unsigned int change_num=num_boids-boids.size();
+    double dt=std::min(App.GetFrameTime(),0.1f);/// max dt=0.1
 
+    int change_num=num_boids-boids.size();/// if not enough boids make some
     if(change_num>0)
-        for(unsigned int i=0;i<change_num;i++)
-            boids.push_back(Boid(ratio,rnd));
+    {
+        for(int i=0;i<change_num;i++)boids.push_back(Boid(ratio,rnd));
+    }
+
 
     if(track_connections)
         connections.clear();
@@ -232,12 +240,11 @@ void Boids::Update(Window &App)
     double r1;
     double fadei,fadej;
 
-
     for(vector<Boid>::iterator i=boids.begin();i!=boids.end();i++)
     {
-        i->position+=i->velocity*dt;
+        i->position+=i->velocity*dt;///move boid
 
-        if(App.GetInput().IsMouseButtonDown(sf::Mouse::Right))
+        if(App.GetInput().IsMouseButtonDown(sf::Mouse::Right))/// influence with mouse
         {
             r=Vector2d(App.GetInput().GetMouseX(),App.GetInput().GetMouseY());
             r.x=r.x*1.0/App.GetHeight()*2.-App.ratio;
@@ -324,14 +331,13 @@ void Boids::Update(Window &App)
             i->faded-=1;
     }
 
-    ///clean tree
-
     boids.erase(remove_if(boids.begin(),boids.end(),faded_boid), boids.end());
-
 }
 
 void Boids::Draw()
 {
+
+
     glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, fboId);
     //glClear(GL_COLOR_BUFFER_BIT );
      glBindTexture(GL_TEXTURE_2D, 0);
@@ -381,7 +387,7 @@ void Boids::Draw()
         }
 
     }
-    glUseProgramObjectARB(backs_prog);
+    if(use_shaders)glUseProgramObjectARB(backs_prog);
 
     glMatrixMode( GL_MODELVIEW );
 
@@ -528,6 +534,7 @@ void Boids::load_boid_settings()
     draw_tree               =Lget_bool_or_default(L,"draw_tree",true,take_default);
     brute_force             =Lget_bool_or_default(L,"brute_force",false,take_default);
     pause                   =Lget_bool_or_default(L,"pause",false,take_default);
+    use_shaders             =Lget_bool_or_default(L,"use_shaders",true,take_default);
 
 
 
@@ -557,6 +564,7 @@ void Boids::save_boid_settings()
         sfile << "draw_tree"                <<" = "<<(draw_tree?"true":"false")     <<endl;
         sfile << "brute_force"              <<" = "<<(brute_force?"true":"false")   <<endl;
         sfile << "pause"                    <<" = "<<(pause?"true":"false")         <<endl;
+        sfile << "use_shaders"              <<" = "<<(use_shaders?"true":"false")         <<endl;
 
 
         sfile.close();

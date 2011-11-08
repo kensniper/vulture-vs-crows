@@ -103,6 +103,7 @@ private:
     Button reset;
     Button back;
     Button hide;
+    Button ushade;
     Label tooltip;
     Label lnumpart;
     bool visible;

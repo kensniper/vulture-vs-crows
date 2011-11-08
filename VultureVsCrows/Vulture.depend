@@ -181,7 +181,7 @@
 1320697373 e:\programming\vulture-vs-crows\vulturevscrows\src\gui.h
 	"startup.h"
 
-1320697739 e:\programming\vulture-vs-crows\vulturevscrows\src\startup.h
+1320741387 e:\programming\vulture-vs-crows\vulturevscrows\src\startup.h
 	<GL/glew.h>
 	<SFML/System.hpp>
 	<SFML/Window.hpp>
@@ -217,10 +217,10 @@
 1320697562 e:\programming\vulture-vs-crows\vulturevscrows\src\vector2d.h
 	<iostream>
 
-1320697356 source:e:\programming\vulture-vs-crows\vulturevscrows\src\gamestates.cpp
+1320741175 source:e:\programming\vulture-vs-crows\vulturevscrows\src\gamestates.cpp
 	"gamestates.h"
 
-1320697367 e:\programming\vulture-vs-crows\vulturevscrows\src\gamestates.h
+1320744363 e:\programming\vulture-vs-crows\vulturevscrows\src\gamestates.h
 	"Label.h"
 	"Slider.h"
 	"Boids.h"
@@ -232,7 +232,7 @@
 1320697702 e:\programming\vulture-vs-crows\vulturevscrows\src\slider.h
 	"GUI.h"
 
-1320697419 e:\programming\vulture-vs-crows\vulturevscrows\src\boids.h
+1320744347 e:\programming\vulture-vs-crows\vulturevscrows\src\boids.h
 	"Startup.h"
 	"Vector2d.h"
 	"random.h"
@@ -247,16 +247,16 @@
 1320697586 source:e:\programming\vulture-vs-crows\vulturevscrows\src\lua_util.cpp
 	"lua_util.h"
 
-1320697370 source:e:\programming\vulture-vs-crows\vulturevscrows\src\main.cpp
+1320744038 source:e:\programming\vulture-vs-crows\vulturevscrows\src\main.cpp
 	"gamestates.h"
 
 1320697692 source:e:\programming\vulture-vs-crows\vulturevscrows\src\slider.cpp
 	"slider.h"
 
-1320698401 source:e:\programming\vulture-vs-crows\vulturevscrows\src\boids.cpp
+1320744347 source:e:\programming\vulture-vs-crows\vulturevscrows\src\boids.cpp
 	"Boids.h"
 
-1320698402 source:e:\programming\vulture-vs-crows\vulturevscrows\src\startup.cpp
+1320741401 source:e:\programming\vulture-vs-crows\vulturevscrows\src\startup.cpp
 	"startup.h"
 	<sstream>
 

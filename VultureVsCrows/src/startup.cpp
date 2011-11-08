@@ -44,7 +44,7 @@ Image::operator GLuint()
     return texture;
 }
 
-Window::Window():sf::Window()
+Window::Window():sf::RenderWindow()
 {
     L = lua_open();
     luaL_openlibs(L);
@@ -57,6 +57,7 @@ Window::Window():sf::Window()
 
     load_video_settings(VM,WSettings);
     init_window_n_gl();
+    take_screenshot=false;
 
     *logstream<<"Window init done"<<endl;
 
@@ -81,7 +82,7 @@ void Window::Reset(int VMn)
 
 void Window::init_window_n_gl()
 {
-    sf::Window::Create(VM,title,sf::Style::Fullscreen,WSettings);
+    sf::RenderWindow::Create(VM,title,sf::Style::Fullscreen,WSettings);
     ratio=GetWidth()*1.0/GetHeight();
 
     glViewport(0, 0, GetWidth(), GetHeight());
@@ -216,7 +217,16 @@ void Window::Display()
 
     glLoadIdentity();
 
-    sf::Window::Display();
+    sf::RenderWindow::Display();
+
+    if(take_screenshot)
+    {
+        take_screenshot=false;
+        sf::Image Screen = sf::RenderWindow::Capture();
+        Screen.SaveToFile("screenshot.png");
+    }
+
+
     glClear(GL_COLOR_BUFFER_BIT);
 }
 
@@ -238,7 +248,7 @@ unsigned int Window::GetVideoModeNum()
 
 const sf::Input& Window::GetInput() const
 {
-    return sf::Window::GetInput();
+    return sf::RenderWindow::GetInput();
 }
 
 void Window::load_video_settings(sf::VideoMode &VM,sf::WindowSettings &WSettings)
@@ -308,7 +318,10 @@ void Window::Load_Images()
     *logstream<<"Image loading done!"<<endl;
 }
 
-
+void Window::TakeScreenshot()
+{
+    take_screenshot=true;
+}
 
 
 
@@ -325,4 +338,6 @@ string GetVideoModeString(int i)
     return ss.str();
 
 }
+
+
 
