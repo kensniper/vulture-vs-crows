@@ -17,7 +17,7 @@
   * Draw some tileable stars
 
 === Other ===
-  * [ShipModules ship modules]
+  * [ShipModules ship modules] editor
   * Add comments to everything
   * Add cool screenshots to project page
 
