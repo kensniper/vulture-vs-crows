@@ -23,5 +23,5 @@
 
 == Completed ==
 
-  * Add Screenshot capability. (Debug buttons)
+  * Add Screenshot capability. ([DebugButtons Debug buttons])
   * Add cool screenshots to project page
