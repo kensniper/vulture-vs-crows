@@ -1,3 +1,5 @@
+<wiki:toc max_depth="2" />
+
 = Introduction =
 
 Ships are constructed from modules in a hierarchycal way. The ideea is that every weapon, engine, armor part, generator and other parts on a ship will be a module. If a parent of a module is destroyed so is every child and cannnot be used further. Colosion with particles will be done seperatly for every module of the ship.
@@ -33,4 +35,5 @@ no new parameters
 
 == engine ==
 
-  # Thrust _distence_*_mass_/_time^2_
+  # Thrust _distance `*` mass / time^2_
+    * half of screen widht is 1 unit, normal metal density is 1 unit, ship area is about 0.2^2, acceleration should be around 0.1, normal thrust is then about 0.005
