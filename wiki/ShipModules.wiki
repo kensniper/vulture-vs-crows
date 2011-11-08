@@ -1,0 +1,36 @@
+= Introduction =
+
+Ships are constructed from modules in a hierarchycal way. The ideea is that every weapon, engine, armor part, generator and other parts on a ship will be a module. If a parent of a module is destroyed so is every child and cannnot be used further. Colosion with particles will be done seperatly for every module of the ship.
+
+
+= Module Types =
+
+Ill be adding these as I design them:
+
+  # hull
+  # engine
+
+
+== hull ==
+
+A part with no funkcionality other than added protection and space to place other modules on. 
+
+
+== engine ==
+
+Pushes the ship in one direction. If of center it produces torque to turn the ship. Min 2 engines needed to reach every point in space, at least 3 for normal handling.
+
+= Module Parameters =
+
+== common ==
+
+  # density
+    * mass calculated from density and area of the module
+
+== hull ==
+
+no new parameters
+
+== engine ==
+
+  # Thrust _distence_*_mass_/_time^2_
