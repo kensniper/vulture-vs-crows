@@ -1,0 +1,12 @@
+
+
+= Introduction =
+
+There are some buttons for debuging purposes.
+
+
+= Debug Buttons =
+
+  * F1 - screenshot
+  * F2 - show FPS (not added yet)
+  * F12 - exit
