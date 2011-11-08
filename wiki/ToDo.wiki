@@ -1,4 +1,4 @@
-#To-Do list.
+<wiki:toc max_depth="2" />
 
 = To-Do list =
 
