@@ -1,8 +1,7 @@
-
-require "lfs"
-
-
+print("images.lua:")
+require'lfs'
 pathstring ="resources/graphics"
+--pathstring ="graphics"
 filetypes =
 {
 	"psd",
@@ -11,7 +10,8 @@ filetypes =
 
 }
 
-images= {}
+textures= {}
+
 
 
 for name in lfs.dir(pathstring) do
@@ -21,14 +21,14 @@ for name in lfs.dir(pathstring) do
     if attr.mode == "file" then
 		for _,p in pairs(filetypes) do
 			if p==postfix then
-				images[prefix]=pathstring.."/".. name
+				textures[prefix]=pathstring.."/".. name
 			end
 		end
 	end
 end
 
-print("loading images: ")
-
-for n,p in pairs(images) do
-	print(n.."\tfrom: \""..p.."\"")
+print("\tloading images: ")
+for n,p in pairs(textures) do
+	print("\t"..n.."\tfrom: \""..p.."\"")
 end
+

@@ -300,8 +300,8 @@ void Window::Load_Images()
         *logstream << "Image list ("<<img_file<<") not found!"<<endl;
     }
 
-    lua_getglobal(L, "images");
-    lua_pushnil(L);
+    lua_getglobal(L, "textures");
+
 
     Image image;
     for (lua_pushnil(L); lua_next(L, -2); lua_pop(L, 1))
