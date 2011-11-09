@@ -5,7 +5,10 @@
 == Curent ==
 
 === Code ===
-
+  * Construct modules
+  * Construct a ship
+  * Make a module editor
+  * Make a Ship editor
   * Make a limited square space with paralax background.
   * Put a ship in space with the ability to drive it.
   * Make it posible to zoom on your ship and to look around it.
@@ -25,3 +28,4 @@
 
   * Add Screenshot capability. ([DebugButtons Debug buttons])
   * Add cool screenshots to project page
+  * Lua now loads the texture list automaticly
