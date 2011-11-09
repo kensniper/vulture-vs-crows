@@ -160,26 +160,7 @@ unsigned long gmst_settingsmenu::Update(Window &app)
 ///================================================================================================================================
 
 
-gmst_meditor::gmst_meditor(Font* f,Window &app):gamestate(f)
-{
-    b_back.Set(0.4,-0.4,-0.2,-0.3,app.GetTex("button"),f,"Go Back");
 
-    AddToList(&b_back);
-}
-
-gmst_meditor::~gmst_meditor()
-{
-}
-
-unsigned long gmst_meditor::Update(Window &app)
-{
-    unsigned long state=0;
-
-    if(b_back.pressed)
-        state=GMST::toMainMenu;
-
-    return state;
-}
 
 
 gmst_game::gmst_game(Font* f,Window &app):gamestate(f)

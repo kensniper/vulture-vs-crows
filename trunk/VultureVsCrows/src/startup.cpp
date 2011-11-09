@@ -99,6 +99,7 @@ void Window::init_window_n_gl()
     glDisable(GL_COLOR_MATERIAL);
     glClearColor(0.0,0.0,0.00,1.0);
     glEnable( GL_TEXTURE_2D );
+    glPointSize(5.0);
 
     glewInit();
 

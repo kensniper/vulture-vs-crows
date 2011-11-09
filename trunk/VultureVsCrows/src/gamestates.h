@@ -152,7 +152,25 @@ public:
 
 private:
     Button b_back;
-
+    Button b_shape;
+    Button b_draw;
+    Slider s_scroll;
+    Label l_r;
+    Slider s_r;
+    Label l_g;
+    Slider s_g;
+    Label l_b;
+    Slider s_b;
+    map<string,Image> module_textures;
+    string selected;
+    sf::Color color;
+    int selected_texture;
+    int hovered_texture;
+    int drawvertices;
+    unsigned int shape;
+    double scroll;
+    bool prevmousestate;
+    vector<Vector2d> vertices;
 };
 
 
