@@ -1,4 +1,4 @@
-print("images.lua")
+--print("images.lua")
 require'lfs'
 
 function gettexturetable(pthstr,ttable)
@@ -25,7 +25,7 @@ function echotexturetable(name,ttable)
 	end
 end
 
-echo = true;
+echo = false;
 
 filetypes =
 {
