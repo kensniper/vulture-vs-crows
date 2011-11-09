@@ -1,10 +1,34 @@
-images={
-	font="resources/graphics/Font.psd",
-	button="resources/graphics/Button.psd",
-	label="resources/graphics/Label.psd",
-	boid="resources/graphics/Boid.psd",
-	line="resources/graphics/Line.psd",
-	slider="resources/graphics/Slider.psd",
-	mouse="resources/graphics/Mouse.psd",
-    checkbox="resources/graphics/CheckBox.psd"
+
+require "lfs"
+
+
+pathstring ="resources/graphics"
+filetypes =
+{
+	"psd",
+	"jpg",
+	"png"
+
 }
+
+images= {}
+
+
+for name in lfs.dir(pathstring) do
+    local fqn = pathstring.."/"..name
+    local attr = lfs.attributes(fqn)
+	local prefix,postfix=string.match(name, "(%w+).(%w+)")
+    if attr.mode == "file" then
+		for _,p in pairs(filetypes) do
+			if p==postfix then
+				images[prefix]=pathstring.."/".. name
+			end
+		end
+	end
+end
+
+print("loading images: ")
+
+for n,p in pairs(images) do
+	print(n.."\tfrom: \""..p.."\"")
+end

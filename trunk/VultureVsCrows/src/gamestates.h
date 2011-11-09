@@ -146,16 +146,20 @@ private:
 class gmst_meditor:public gamestate
 {
 public:
-    gmst_meditor(Font* f,Window &app,Boids *b);
+    gmst_meditor(Font* f,Window &app);
     virtual ~gmst_meditor();
     virtual unsigned long Update(Window &app);
+
+private:
+    Button b_back;
+
 };
 
 
 class gmst_game:public gamestate
 {
 public:
-    gmst_game(Font* f,Window &app,Boids *b);
+    gmst_game(Font* f,Window &app);
     virtual ~gmst_game();
     virtual unsigned long Update(Window &app);
 };

@@ -33,6 +33,7 @@ int main()
     gmst_mainmenu mainmenu(&f,App);
     gmst_settingsmenu settingsmenu(&f,App);
     gmst_backmenu backmenu(&f,App,&boids);
+    gmst_meditor meditor(&f,App);
     gamestate *curstate;
     curstate = &mainmenu;
 
@@ -68,6 +69,8 @@ int main()
             curstate = &mainmenu;
         else if(state==GMST::toBackgroundMenu)
             curstate = &backmenu;
+        else if(state==GMST::toModuleEditor)
+            curstate = &meditor;
 
         FPS_label.SetText( "FPS: %i",(int)(1./App.GetFrameTime()));
         FPS_label.Draw();
