@@ -161,6 +161,7 @@ private:
     Slider s_g;
     Label l_b;
     Slider s_b;
+    Label l_area;
     map<string,Image> module_textures;
     string selected;
     sf::Color color;
@@ -171,6 +172,8 @@ private:
     double scroll;
     bool prevmousestate;
     vector<Vector2d> vertices;
+    double area;
+    Vector2d center;
 };
 
 
