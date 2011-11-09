@@ -61,7 +61,7 @@ Window::Window():sf::RenderWindow()
 
     *logstream<<"Window init done"<<endl;
 
-    Load_Images();
+    Load_Images("textures",imagelist);
 
     ShowMouseCursor(false);
 }
@@ -293,14 +293,14 @@ void Window::save_video_settings()
     else *logstream << "settings file ("<<settings_file<<") cannot be created";
 }
 
-void Window::Load_Images()
+void Window::Load_Images(string tablename,map<string,Image> &imagemap)
 {
     if (luaL_dofile(L,img_file.c_str()))
     {
         *logstream << "Image list ("<<img_file<<") not found!"<<endl;
     }
 
-    lua_getglobal(L, "textures");
+    lua_getglobal(L, tablename.c_str());
 
 
     Image image;
@@ -308,7 +308,7 @@ void Window::Load_Images()
     {
         if(image.LoadFromFile(lua_tolstring(L,-1,NULL)))
         {
-            imagelist.insert ( pair<string,Image>(lua_tolstring(L,-2,NULL),image) );
+            imagemap.insert ( pair<string,Image>(lua_tolstring(L,-2,NULL),image) );
         }
         else
             *logstream<<"Error at loading image (name: "<<lua_tolstring(L,-2,NULL)<<" path: "<<lua_tolstring(L,-1,NULL)<<" )!" <<endl;

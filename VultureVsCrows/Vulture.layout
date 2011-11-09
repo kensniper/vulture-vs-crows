@@ -7,7 +7,7 @@
 	<File name="resources\shaders\shader.vert" open="0" top="0" tabpos="4">
 		<Cursor position="158" topLine="0" />
 	</File>
-	<File name="src\Boids.cpp" open="1" top="0" tabpos="7">
+	<File name="src\Boids.cpp" open="1" top="1" tabpos="7">
 		<Cursor position="5727" topLine="205" />
 	</File>
 	<File name="src\Boids.h" open="1" top="0" tabpos="6">

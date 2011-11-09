@@ -56,6 +56,7 @@ public:
     Image GetTex(string s);
     unsigned int GetVideoModeNum();
     const sf::Input& GetInput() const;
+    void Load_Images(string tablename,map<string,Image> &imagemap);
 
     void TakeScreenshot();
 
@@ -71,7 +72,7 @@ private:
     void init_window_n_gl();
     void load_video_settings(sf::VideoMode &VM,sf::WindowSettings &WSettings);
     void save_video_settings();
-    void Load_Images();
+
     bool take_screenshot;
 
     map<string,Image> imagelist;

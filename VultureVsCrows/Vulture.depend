@@ -181,7 +181,7 @@
 1320697373 e:\programming\vulture-vs-crows\vulturevscrows\src\gui.h
 	"startup.h"
 
-1320741387 e:\programming\vulture-vs-crows\vulturevscrows\src\startup.h
+1320846027 e:\programming\vulture-vs-crows\vulturevscrows\src\startup.h
 	<GL/glew.h>
 	<SFML/System.hpp>
 	<SFML/Window.hpp>
@@ -256,7 +256,7 @@
 1320744347 source:e:\programming\vulture-vs-crows\vulturevscrows\src\boids.cpp
 	"Boids.h"
 
-1320842295 source:e:\programming\vulture-vs-crows\vulturevscrows\src\startup.cpp
+1320845835 source:e:\programming\vulture-vs-crows\vulturevscrows\src\startup.cpp
 	"startup.h"
 	<sstream>
 
