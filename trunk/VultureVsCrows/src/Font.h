@@ -18,7 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 #ifndef _FONT_
 #define _FONT_
 
-#include "startup.h"
+#include "Startup.h"
 
 class Font{
     public:

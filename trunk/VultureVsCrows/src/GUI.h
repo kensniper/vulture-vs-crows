@@ -18,7 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 
 #ifndef GUI_H
 #define GUI_H
-#include "startup.h"
+#include "Startup.h"
 
 class GUI
 {

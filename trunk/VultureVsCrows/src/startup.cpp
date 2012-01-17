@@ -15,7 +15,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>
 */
-#include "startup.h"
+#include "Startup.h"
 #include <sstream>
 
 using namespace std;
@@ -46,6 +46,7 @@ Image::operator GLuint()
 
 Window::Window():sf::RenderWindow()
 {
+    cerr<<"here!";
     L = lua_open();
     luaL_openlibs(L);
 

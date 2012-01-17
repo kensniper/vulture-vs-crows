@@ -18,8 +18,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 #ifndef GAMESTATES
 #define GAMESTATES
 
-#include "Label.h"
-#include "Slider.h"
+#include "label.h"
+#include "slider.h"
 #include "Boids.h"
 #include <list>
 
@@ -162,6 +162,9 @@ private:
     Label l_b;
     Slider s_b;
     Label l_area;
+    Slider s_density;
+    Label l_density;
+    Label l_mass;
     map<string,Image> module_textures;
     string selected;
     sf::Color color;
@@ -170,6 +173,7 @@ private:
     int drawvertices;
     unsigned int shape;
     double scroll;
+    double density;
     bool prevmousestate;
     vector<Vector2d> vertices;
     double area;
