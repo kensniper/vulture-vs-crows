@@ -8,21 +8,26 @@
 		<Build>
 			<Target title="Debug">
 				<Option output="VultureVsCrows" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Debug\" />
+				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
 				<Linker>
+					<Add option="-llua51" />
+					<Add option="-static-libgcc" />
 					<Add option="-lsfml-graphics-s-d" />
 					<Add option="-lsfml-window-s-d" />
 					<Add option="-lsfml-system-s-d" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/glew32.lib" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglu32.a" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libopengl32.a" />
 				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="VultureVsCrows" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Release\" />
+				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -30,10 +35,30 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add option="-llua51" />
+					<Add option="-static-libgcc" />
 					<Add option="-lsfml-graphics-s" />
 					<Add option="-lsfml-window-s" />
 					<Add option="-lsfml-system-s" />
 					<Add option="-Wno-write-strings" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/glew32.lib" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglu32.a" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libopengl32.a" />
+				</Linker>
+			</Target>
+			<Target title="Release Ubuntu">
+				<Option platforms="Unix;" />
+				<Option output="VultureVsCrows" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Linker>
+					<Add option="-lsfml-graphics" />
+					<Add option="-lsfml-window" />
+					<Add option="-lsfml-system" />
+					<Add option="-lGL" />
+					<Add option="-llua5.1" />
+					<Add option="-lGLU" />
 				</Linker>
 			</Target>
 		</Build>
@@ -41,42 +66,35 @@
 			<Add option="-Wall" />
 			<Add option="-DGLEW_STATIC" />
 		</Compiler>
-		<Linker>
-			<Add option="-llua51" />
-			<Add option="-static-libgcc" />
-			<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\lib\glew32.lib" />
-			<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\lib\libglu32.a" />
-			<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\lib\libopengl32.a" />
-		</Linker>
-		<Unit filename="resources\shaders\shader.frag" />
-		<Unit filename="resources\shaders\shader.vert" />
-		<Unit filename="src\Boids.cpp" />
-		<Unit filename="src\Boids.h" />
-		<Unit filename="src\Button.cpp" />
-		<Unit filename="src\Button.h" />
-		<Unit filename="src\Font.cpp" />
-		<Unit filename="src\Font.h" />
-		<Unit filename="src\GUI.cpp" />
-		<Unit filename="src\GUI.h" />
-		<Unit filename="src\Startup.h" />
-		<Unit filename="src\Vector2d.cpp" />
-		<Unit filename="src\Vector2d.h" />
-		<Unit filename="src\backmenu.cpp" />
-		<Unit filename="src\gamestates.cpp" />
-		<Unit filename="src\gamestates.h" />
-		<Unit filename="src\label.cpp" />
-		<Unit filename="src\label.h" />
-		<Unit filename="src\lua_util.cpp" />
-		<Unit filename="src\lua_util.h" />
-		<Unit filename="src\main.cpp" />
-		<Unit filename="src\meditor.cpp" />
-		<Unit filename="src\random.cpp" />
-		<Unit filename="src\random.h" />
-		<Unit filename="src\slider.cpp" />
-		<Unit filename="src\slider.h" />
-		<Unit filename="src\startup.cpp" />
-		<Unit filename="src\textfile.cpp" />
-		<Unit filename="src\textfile.h" />
+		<Unit filename="resources/shaders/shader.frag" />
+		<Unit filename="resources/shaders/shader.vert" />
+		<Unit filename="src/Boids.cpp" />
+		<Unit filename="src/Boids.h" />
+		<Unit filename="src/Button.cpp" />
+		<Unit filename="src/Button.h" />
+		<Unit filename="src/Font.cpp" />
+		<Unit filename="src/Font.h" />
+		<Unit filename="src/GUI.cpp" />
+		<Unit filename="src/GUI.h" />
+		<Unit filename="src/Startup.h" />
+		<Unit filename="src/Vector2d.cpp" />
+		<Unit filename="src/Vector2d.h" />
+		<Unit filename="src/backmenu.cpp" />
+		<Unit filename="src/gamestates.cpp" />
+		<Unit filename="src/gamestates.h" />
+		<Unit filename="src/label.cpp" />
+		<Unit filename="src/label.h" />
+		<Unit filename="src/lua_util.cpp" />
+		<Unit filename="src/lua_util.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/meditor.cpp" />
+		<Unit filename="src/random.cpp" />
+		<Unit filename="src/random.h" />
+		<Unit filename="src/slider.cpp" />
+		<Unit filename="src/slider.h" />
+		<Unit filename="src/startup.cpp" />
+		<Unit filename="src/textfile.cpp" />
+		<Unit filename="src/textfile.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

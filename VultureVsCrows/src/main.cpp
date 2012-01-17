@@ -20,6 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 
 int main()
 {
+    cerr<<"here!";
     Window App;
     Font f(App,"font");
 

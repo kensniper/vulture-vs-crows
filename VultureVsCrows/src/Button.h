@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 #define _BUTTON_H_
 
 #include "GUI.h"
-#include "font.h"
+#include "Font.h"
 
 class Button:public GUI
 {
