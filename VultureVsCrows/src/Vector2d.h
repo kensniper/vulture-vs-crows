@@ -26,6 +26,7 @@ class Vector2d{
 
 public:
 	Vector2d(double a, double b);
+	Vector2d(const Vector2d& v);
 	Vector2d();
 	~Vector2d();
 

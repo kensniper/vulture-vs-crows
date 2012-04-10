@@ -194,13 +194,18 @@ private:
     int state;
 
     enum EDST {
-        EDST_nothing=1,
-        EDST_moving=2,
-        EDST_rotating=4
+        EDST_nothing,
+        EDST_moving,
+        EDST_rotating,
+        EDST_drawing,
+        EDST_deleting
     };
 
     int editstate;
     Vector2d editvector;
+    bool editbool;
+    Vector2d vtx[3];
+    int tn;
     vector<Triangle>::iterator ed;
 };
 

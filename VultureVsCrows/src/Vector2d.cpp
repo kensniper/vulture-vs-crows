@@ -26,6 +26,12 @@ Vector2d::Vector2d(double a,double b){
 	y=b;
 }
 
+Vector2d::Vector2d(const Vector2d& v)
+{
+    x=v.x;
+    y=v.y;
+}
+
 Vector2d::Vector2d(){
 }
 
