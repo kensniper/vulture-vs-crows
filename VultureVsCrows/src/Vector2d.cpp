@@ -120,6 +120,21 @@ double Vector2d::Lenght(){
 
 }
 
+Vector2d Vector2d::rotate(double t)
+{
+    double xp,yp,c,s;
+    c=cos(t);
+    s=sin(t);
+    xp=x * c - y * s;
+    yp=x * s + y * c;
+    return Vector2d(xp,yp);
+};
+
+double Vector2d::cross(Vector2d a,Vector2d b)
+{
+    return a.x*b.y-a.y*b.x;
+};
+
 Vector2d Vector2d::Normalize(){
 	Vector2d c(x,y);
 	return c/sqrt(x*x+y*y);

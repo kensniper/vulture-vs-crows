@@ -92,7 +92,8 @@ unsigned long gmst_mainmenu::Update(Window &app)
         state=GMST::exitGame;
     if(bmeditor.pressed)
         state=GMST::toModuleEditor;
-
+    if(b1.pressed)
+        state=GMST::toGame;
 
     return state;
 
@@ -163,18 +164,6 @@ unsigned long gmst_settingsmenu::Update(Window &app)
 
 
 
-gmst_game::gmst_game(Font* f,Window &app):gamestate(f)
-{
 
-}
-
-gmst_game::~gmst_game()
-{
-
-}
-unsigned long gmst_game::Update(Window &app)
-{
-    return 0;
-}
 
 

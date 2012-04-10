@@ -211,8 +211,8 @@ void Window::Display()
     glTranslated( x, y, 0 );
 
     glBegin( GL_QUADS );
-        glTexCoord2f( 0.+xm,0.+ym);glVertex2d( -0.005, 0.005 );
-        glTexCoord2f( 0.+xm, 0.5+ym);glVertex2d( -0.005, -.075 );
+        glTexCoord2f( 0.+xm,0.+ym);glVertex2d( 0.0, 0.005 );
+        glTexCoord2f( 0.+xm, 0.5+ym);glVertex2d( 0.0, -.075 );
         glTexCoord2f( 0.5+xm, 0.5+ym);glVertex2d( .075, -.075 );
         glTexCoord2f( 0.5+xm, 0.+ym); glVertex2d( .075, 0.005 );
     glEnd( );

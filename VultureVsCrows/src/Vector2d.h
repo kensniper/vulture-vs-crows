@@ -47,6 +47,9 @@ public:
 
 	friend ostream& operator<<(ostream&,Vector2d);
 
+    static double cross(Vector2d,Vector2d);
+
+    Vector2d rotate(double);
 	Vector2d Normalize();
 	double Lenght();
 
