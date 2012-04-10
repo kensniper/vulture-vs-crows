@@ -1,0 +1,21 @@
+<wiki:toc max_depth="2" />
+
+= Weapon Types =
+
+== Kinetic ==
+
+Basic bullets. Shields will have minimal effect on them, they will transfer momentum. minimal damage to armor, but will be able to penetrate it and cause high structural damage. they can also bounce off armor causing almost no damage.
+
+== Energy ==
+
+Lasers. Cause medium shield damage but do not penetrate it. Heat up modules. Modules will explode if too hot. Hot armor will be easier to penetrate.
+
+== Hybrid ==
+
+Plasma, electrons, protons, ions, antimater. will have properties of both kinetic and energy weapons. Could also cause electrical problems...
+
+== Missile ==
+
+Damage in area. shields can stop the missile but not the blast.
+
+
