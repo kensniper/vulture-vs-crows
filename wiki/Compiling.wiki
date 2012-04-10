@@ -1,6 +1,6 @@
 =SFML=
 
-Download version 1.6 from [http://www.sfml-dev.org/download.php here] and folow instruction in set up tutorial. Also take the mingw with gcc 4.4 from the tutorial if you get a "undefined reference to `_Unwind_Resume'" error.
+Download version 1.6 from [http://www.sfml-dev.org/download.php here] and folow instruction in set up tutorial. Also take the mingw with gcc 4.4 from the tutorial if you get a "undefined reference to  _Unwind_Resume" error.
 
 =LUA=
 
