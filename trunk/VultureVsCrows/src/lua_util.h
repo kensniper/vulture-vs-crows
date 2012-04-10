@@ -18,12 +18,27 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 #ifndef LUA_UTIL
 #define LUA_UTIL
 
-extern "C"
-{
-    #include "lua5.1/lua.h"
-    #include "lua5.1/lualib.h"
-    #include "lua5.1/lauxlib.h"
-}
+
+
+#ifdef __linux__
+ extern "C"
+    {
+        #include "lua5.1/lua.h"
+        #include "lua5.1/lualib.h"
+        #include "lua5.1/lauxlib.h"
+    }
+#elif defined _WIN32 || defined _WIN64
+  extern "C"
+    {
+        #include "lua.h"
+        #include "lualib.h"
+        #include "lauxlib.h"
+    }
+#else
+#error "unknown platform"
+#endif
+
+
 
 #include <iostream>
 using namespace std;
