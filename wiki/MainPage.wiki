@@ -1,5 +1,5 @@
 #summary main page
 
-compiling notes
+[Compiling Compiling notes]
 
 [ToDo To-Do list]
