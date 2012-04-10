@@ -180,6 +180,7 @@ private:
     Vector2d center;
 };
 
+#include "geometry.h"
 
 class gmst_game:public gamestate
 {
@@ -187,6 +188,20 @@ public:
     gmst_game(Font* f,Window &app);
     virtual ~gmst_game();
     virtual unsigned long Update(Window &app);
+private:
+
+    vector<Triangle> triangle;
+    int state;
+
+    enum EDST {
+        EDST_nothing=1,
+        EDST_moving=2,
+        EDST_rotating=4
+    };
+
+    int editstate;
+    Vector2d editvector;
+    vector<Triangle>::iterator ed;
 };
 
 #endif

@@ -20,7 +20,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 
 int main()
 {
-    cerr<<"here!";
     Window App;
     Font f(App,"font");
 
@@ -35,6 +34,7 @@ int main()
     gmst_settingsmenu settingsmenu(&f,App);
     gmst_backmenu backmenu(&f,App,&boids);
     gmst_meditor meditor(&f,App);
+    gmst_game game(&f,App);
     gamestate *curstate;
     curstate = &mainmenu;
 
@@ -72,6 +72,8 @@ int main()
             curstate = &backmenu;
         else if(state==GMST::toModuleEditor)
             curstate = &meditor;
+        else if(state==GMST::toGame)
+            curstate = &game;
 
         FPS_label.SetText( "FPS: %i",(int)(1./App.GetFrameTime()));
         FPS_label.Draw();

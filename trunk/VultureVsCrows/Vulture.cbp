@@ -86,6 +86,8 @@
 		<Unit filename="src\lua_util.h" />
 		<Unit filename="src\main.cpp" />
 		<Unit filename="src\meditor.cpp" />
+		<Unit filename="src\polygon.cpp" />
+		<Unit filename="src\polygon.h" />
 		<Unit filename="src\random.cpp" />
 		<Unit filename="src\random.h" />
 		<Unit filename="src\slider.cpp" />

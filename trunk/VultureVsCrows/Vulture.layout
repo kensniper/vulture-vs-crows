@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Debug" />
+	<ActiveTarget name="Release" />
 	<File name="resources\shaders\shader.frag" open="0" top="0" tabpos="3">
 		<Cursor position="628" topLine="0" />
 	</File>
@@ -16,10 +16,10 @@
 	<File name="src\Button.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="src\Button.h" open="1" top="0" tabpos="9">
+	<File name="src\Button.h" open="0" top="0" tabpos="9">
 		<Cursor position="790" topLine="0" />
 	</File>
-	<File name="src\Font.cpp" open="1" top="0" tabpos="4">
+	<File name="src\Font.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="730" topLine="0" />
 	</File>
 	<File name="src\Font.h" open="0" top="0" tabpos="12">
@@ -28,10 +28,10 @@
 	<File name="src\GUI.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="src\GUI.h" open="1" top="0" tabpos="10">
+	<File name="src\GUI.h" open="0" top="0" tabpos="10">
 		<Cursor position="759" topLine="0" />
 	</File>
-	<File name="src\Startup.h" open="1" top="0" tabpos="3">
+	<File name="src\Startup.h" open="0" top="0" tabpos="3">
 		<Cursor position="756" topLine="0" />
 	</File>
 	<File name="src\Vector2d.cpp" open="0" top="0" tabpos="7">
@@ -40,26 +40,32 @@
 	<File name="src\Vector2d.h" open="0" top="0" tabpos="6">
 		<Cursor position="50" topLine="0" />
 	</File>
-	<File name="src\gamestates.cpp" open="0" top="0" tabpos="1">
-		<Cursor position="4588" topLine="120" />
+	<File name="src\gamestates.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="4477" topLine="129" />
 	</File>
-	<File name="src\gamestates.h" open="1" top="0" tabpos="7">
-		<Cursor position="1734" topLine="0" />
+	<File name="src\gamestates.h" open="0" top="0" tabpos="7">
+		<Cursor position="879" topLine="142" />
 	</File>
-	<File name="src\label.cpp" open="1" top="0" tabpos="5">
+	<File name="src\label.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="731" topLine="0" />
 	</File>
-	<File name="src\label.h" open="1" top="0" tabpos="8">
+	<File name="src\label.h" open="0" top="0" tabpos="8">
 		<Cursor position="47" topLine="0" />
 	</File>
-	<File name="src\lua_util.h" open="1" top="0" tabpos="6">
+	<File name="src\lua_util.h" open="0" top="0" tabpos="6">
 		<Cursor position="1109" topLine="9" />
 	</File>
-	<File name="src\main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="2549" topLine="0" />
+	<File name="src\main.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="797" topLine="28" />
 	</File>
 	<File name="src\meditor.cpp" open="0" top="0" tabpos="15">
 		<Cursor position="328" topLine="0" />
+	</File>
+	<File name="src\polygon.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src\polygon.h" open="1" top="1" tabpos="2">
+		<Cursor position="256" topLine="0" />
 	</File>
 	<File name="src\random.cpp" open="0" top="0" tabpos="10">
 		<Cursor position="18" topLine="0" />
@@ -73,8 +79,8 @@
 	<File name="src\slider.h" open="0" top="0" tabpos="9">
 		<Cursor position="48" topLine="0" />
 	</File>
-	<File name="src\startup.cpp" open="1" top="1" tabpos="2">
-		<Cursor position="3188" topLine="88" />
+	<File name="src\startup.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="3063" topLine="113" />
 	</File>
 	<File name="src\textfile.cpp" open="0" top="0" tabpos="1">
 		<Cursor position="418" topLine="15" />
