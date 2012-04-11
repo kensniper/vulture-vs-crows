@@ -17,9 +17,10 @@
 				<Linker>
 					<Add option="-llua51" />
 					<Add option="-static-libgcc" />
-					<Add option="-lsfml-graphics-s-d" />
-					<Add option="-lsfml-window-s-d" />
-					<Add option="-lsfml-system-s-d" />
+					<Add option="-lsfml-graphics-s" />
+					<Add option="-lsfml-window-s" />
+					<Add option="-lsfml-system-s" />
+					<Add option="-Wno-write-strings" />
 					<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\lib\libglu32.a" />
 					<Add library="C:\Program Files (x86)\CodeBlocks\MinGW\lib\libopengl32.a" />
 				</Linker>
@@ -30,10 +31,9 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-O2" />
+					<Add option="-g" />
 				</Compiler>
 				<Linker>
-					<Add option="-s" />
 					<Add option="-llua51" />
 					<Add option="-static-libgcc" />
 					<Add option="-lsfml-graphics-s" />
@@ -78,16 +78,17 @@
 		<Unit filename="src\Vector2d.cpp" />
 		<Unit filename="src\Vector2d.h" />
 		<Unit filename="src\backmenu.cpp" />
+		<Unit filename="src\game.cpp" />
 		<Unit filename="src\gamestates.cpp" />
 		<Unit filename="src\gamestates.h" />
+		<Unit filename="src\geometry.cpp" />
+		<Unit filename="src\geometry.h" />
 		<Unit filename="src\label.cpp" />
 		<Unit filename="src\label.h" />
 		<Unit filename="src\lua_util.cpp" />
 		<Unit filename="src\lua_util.h" />
 		<Unit filename="src\main.cpp" />
 		<Unit filename="src\meditor.cpp" />
-		<Unit filename="src\polygon.cpp" />
-		<Unit filename="src\polygon.h" />
 		<Unit filename="src\random.cpp" />
 		<Unit filename="src\random.h" />
 		<Unit filename="src\slider.cpp" />
