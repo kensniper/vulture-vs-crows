@@ -198,7 +198,8 @@ private:
         EDST_moving,
         EDST_rotating,
         EDST_drawing,
-        EDST_deleting
+        EDST_deleting,
+        EDST_velocity
     };
 
     int editstate;
